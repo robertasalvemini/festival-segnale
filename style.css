@@ -163,7 +163,7 @@ h3 {
 }
 
 .event-card {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   overflow: hidden;
   border: 1px solid #b7c0b7;
   border-radius: 0.75rem;
