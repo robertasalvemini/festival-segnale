@@ -28,7 +28,7 @@
       <p class="reading-text">Il festival si sviluppa in tre sedi, una per ogni tipo di attività. Qui trovi che cosa si svolge in ciascun luogo e alcune indicazioni utili per organizzare la visita.</p>
     </section>
 
-    <section class="content-section" aria-labelledby="titolo-galleria">
+    <section class="content-section colonna-centrale" aria-labelledby="titolo-galleria">
       <h2 id="titolo-galleria">Le sedi</h2>
       <div class="swiper luoghi-swiper" aria-label="Galleria fotografica delle sedi">
         <div class="swiper-wrapper">
@@ -50,8 +50,36 @@
       </div>
     </section>
 
-    <section class="content-section" aria-labelledby="titolo-organizzare">
-     <p>Per orari e descrizioni completi consulta il <a href="programma.html">Programma</a>.</p>
+    <section class="content-section colonna-centrale" aria-labelledby="titolo-arrivare">
+  <h2 id="titolo-arrivare">Come arrivare</h2>
+
+  <iframe id="mappa-sedi"
+    title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
+    src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"></iframe>
+
+  <p>
+    <a href="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528">Visualizza la mappa a schermo intero</a>
+  </p>
+
+  <h3>Indirizzi delle sedi</h3>
+  <ul class="venues">
+    <li>
+      <strong>Sede centrale:</strong> Corso Duca degli Abruzzi 24, Torino.
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Corso+Duca+degli+Abruzzi+24%2C+Torino">Indicazioni per la sede centrale</a>
+    </li>
+    <li>
+      <strong>Politecnico al Valentino:</strong> Viale Mattioli 39, Torino.
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Viale+Mattioli+39%2C+Torino">Indicazioni per il Politecnico al Valentino</a>
+    </li>
+    <li>
+      <strong>Sede di Mirafiori:</strong> Corso Luigi Settembrini 178, Torino.
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Corso+Luigi+Settembrini+178%2C+Torino">Indicazioni per la sede di Mirafiori</a>
+    </li>
+  </ul>
+</section>
+
+<section class="content-section">
+      <p>Per orari e descrizioni completi consulta il <a href="programma.html">Programma</a>.</p>
     </section>
   </main>
 
@@ -60,12 +88,18 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
   <script>
     new Swiper('.luoghi-swiper', {
-      slidesPerView: 1,
-      navigation: {
-        prevEl: '.luoghi-swiper .swiper-button-prev',
-        nextEl: '.luoghi-swiper .swiper-button-next'
-      }
-    });
+  slidesPerView: 1,
+  keyboard: {
+    enabled: true
+  },
+  a11y: {
+    enabled: true
+  },
+  navigation: {
+    prevEl: '.luoghi-swiper .swiper-button-prev',
+    nextEl: '.luoghi-swiper .swiper-button-next'
+  }
+});
   </script>
 </body>
 </html>
