@@ -3,12 +3,12 @@
 
 /* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
 :root {
-  --colore-primario: #244f6a;
-  --colore-primario-scuro: #172c46;
+  --colore-primario: #C65C36;
+  --colore-primario-scuro: #993b18;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
   --font-testo: "Poppins", sans-serif;
-  --font-titoli: "Palatino Linotype", serif;
+  --font-titoli: "Fascinate", sans-serif;
 }
 
 * {
@@ -286,8 +286,26 @@ h3 {
 .luoghi-swiper .swiper-button-prev,
 .luoghi-swiper .swiper-button-next {
   top: 28.125cqw;
-  margin-top: calc(var(--swiper-navigation-size) / -2);
-  filter: drop-shadow(2px 2px 2px var(--colore-primario-scuro));
+  width: calc(var(--swiper-navigation-size) * 1.5);
+  height: calc(var(--swiper-navigation-size) * 1.5);
+  margin-top: calc(var(--swiper-navigation-size) * -0.75);
+  border-radius: 50%;
+  background: rgba(198, 92, 54, 0.92);
+  filter: none;
+}
+
+.luoghi-swiper .swiper-button-prev svg,
+.luoghi-swiper .swiper-button-next svg {
+  width: 60%;
+  height: 60%;
+}
+
+.luoghi-swiper .swiper-button-prev svg {
+  transform: translateX(-6%);
+}
+
+.luoghi-swiper .swiper-button-next svg {
+  transform: translateX(6%);
 }
 
 /* Mappa delle sedi */
