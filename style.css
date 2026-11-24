@@ -322,3 +322,46 @@ h3 {
   max-width: 54rem;
   margin-inline: auto;
 }
+
+.stato-eventi,
+.stato-meteo {
+  margin: 1rem 0;
+  padding: 1.75rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.stato-eventi[hidden] {
+  display: none;
+}
+
+/* Meteo: card con le stesse proporzioni delle card degli eventi */
+.stato-meteo,
+.meteo-dati {
+  max-width: 22rem;
+}
+
+.meteo-dati {
+  margin: 1rem 0;
+  padding: 1.75rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.meteo-dati dt {
+  color: var(--colore-primario);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.meteo-dati dd {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.meteo-dati dd:last-child {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
